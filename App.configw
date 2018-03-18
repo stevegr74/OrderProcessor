@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1"/>
+  </startup>
+  <connectionStrings>
+    <add name="DB" connectionString="User ID=DEV_STEVEG;Password=DEV_StevePa55!;Initial Catalog=DEV_Orders;Data Source=127.0.0.1;MultipleActiveResultSets=true"/>
+  </connectionStrings>
+  <appSettings>
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+    <add key="ProcessingDays" value="0123456" />
+    <add key="ProcessingInterval" value="1" />
+    <add key="Workers" value="1" />
+    <add key="LogPath" value="c:\Logs\OrderProcessor\" />
+    <add key="LogEnabled" value="Y" />
+    <add key="LogToConsole" value="N" />
+    <add key="EmailEnabled" value="N" />
+    <add key="EmailTo" value=""/>
+    <add key="EmailCC" value=""/>
+    <add key="EmailFrom" value=""/>
+    <add key="EmailSubject" value="Order Processing Alert"/>
+    <add key="EmailUrgent" value="Y"/>
+  </appSettings>
+  <system.net>
+    <mailSettings>
+      <smtp from="OrderProcessor@emaildomain.com">
+        <network host="127.0.0.1" port="25" userName="orderprocessor" password="Abc123456" defaultCredentials="true"/>
+      </smtp>
+    </mailSettings>
+  </system.net>
+</configuration>
