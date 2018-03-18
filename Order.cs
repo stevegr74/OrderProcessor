@@ -24,7 +24,7 @@ namespace OrderProcessor
                 try
                 {
                     //TODO: should parameterize this
-                    SqlCommand sqlCommand = new SqlCommand("insert into tblOrder VALUES('" + OrderReference + "','" + OrderMarketplace + "','" + OrderFirstname + "','" + OrderSurname + "')", sql);
+                    SqlCommand sqlCommand = new SqlCommand("insert into tblOrder VALUES('" + OrderReference + "','" + OrderMarketplace + "','" + OrderFirstname + "','" + OrderSurname + "',0)", sql);
                     sqlCommand.Connection.Open();
                     sqlCommand.ExecuteNonQuery();
                     ret = true;
