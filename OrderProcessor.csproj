@@ -93,6 +93,8 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="TestResults\ORDER_4254656575765765_Walmart.csv" />
+    <None Include="TestResults\ORDER_SDD4254656575765765-kdu94_JET.csv" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ProjectInstaller.resx">
